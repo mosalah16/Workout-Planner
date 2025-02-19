@@ -1,3 +1,13 @@
+function sidebar_open() {
+  document.getElementById("sidebar").classList.add("show");
+  document.body.classList.add("sidebar-open");
+}
+
+function sidebar_close() {
+  document.getElementById("sidebar").classList.remove("show");
+  document.body.classList.remove("sidebar-open");
+}
+
 let slides = document.querySelectorAll(".slide");
 let currentIndex = 0;
 
