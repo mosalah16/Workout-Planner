@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d3d9d4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+header {
+  background-color: #212a31;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 20px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 300px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 100%;
+}
+
+/* middle */
+.parent {
+  display: flex; 
+  width: 100%;
+  min-height: calc(100vh - 80px); 
+}
+
+.left {
+  width: 20%;
+  padding: 10px;
+  border: #CCC solid 1px;
+  min-height: 200px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column; 
+  width: 80%;
+  padding: 10px;
+  border: #CCC solid 1px;
+  min-height: 200px;
+}
+
+.top {
+  flex: 1; 
+  height: 35%; 
+}
+
+.bot {
+  background: #596570;
+  height: 65%; 
+}
+
+.slideshow-container {
+  width: 100%;
+  max-width: 666px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+section {
+  padding: 20px;
+  flex-grow: 1; 
+}
+
+#workout-categories .category {
+  background-color: #344f68;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+#workout-categories .category:hover {
+  background-color: #123e66;
+}
+
+#exercise-list {
+  display: none;
+}
+
+#custom-workout {
+  display: none;
+  text-align: center;
+}
+
+button {
+  background-color: #404449;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #2E3944;
+}
+
+#exercises ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+#exercises li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 23%; 
+  box-sizing: border-box;
+  height: 390px;
+}
+
+#exercises img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}

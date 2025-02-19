@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <div class="logo-title">
+        <img src="images/logo.png" alt="Workout Planner Logo" class="logo">
+        <h1>Workout Planner</h1>
+        
+    </div>   
+        <div class="slideshow-container">
+          <img src="images/1.jpg" class="slide" alt="Workout Image 1">
+          <img src="images/2.jpg" class="slide" alt="Workout Image 2">
+          <img src="images/3.jpg" class="slide" alt="Workout Image 3">
+      </div>
+    </header>
+
+    <div class="parent">
+      <div class="left">
+        <div class="top">
+      <section id="workout-categories">
+        <h2>Choose a Category</h2>
+        <div class="category" onclick="showExercises('strength')">Strength</div>
+        <div class="category" onclick="showExercises('cardio')">Cardio</div>
+        <div class="category" onclick="showExercises('flexibility')">Flexibility</div>
+      </section>
+        </div>
+        <div class="bot">
+          <section id="custom-workout">
+            <h2>Your Custom Workout</h2>
+            <ul id="custom-list"></ul>
+            <button onclick="saveWorkout()">Save Workout</button>
+            <button onclick="clearSavedWorkout()">Clear Saved Workout</button>
+          </section>
+        </div>
+      </div>
+    
+      <div class="right">
+      <section id="exercise-list">
+        <h2>Exercises</h2>
+        <div id="exercises"></div>
+        <button onclick="addCustomWorkout()">Add Custom Workout</button>
+      </section>
+      </div>
+    </div>
+    
+      <footer>
+        <p> Workout Planner by Mohamed Salah Allouche</p>
+      </footer>
+    
+      <script src="js/script.js"></script>
+</body>
+</html>
