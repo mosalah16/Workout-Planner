@@ -8,6 +8,12 @@ function sidebar_close() {
   document.body.classList.remove("sidebar-open");
 }
 
+document.addEventListener("click", function(e) {
+  if (!document.getElementById("sidebar").contains(e.target) && e.target !== document.getElementById("sidebar_open") && document.getElementById("sidebar").classList.contains("show")) {
+    sidebar_close();
+  }
+});
+
 let slides = document.querySelectorAll(".slide");
 let currentIndex = 0;
 

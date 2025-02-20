@@ -48,30 +48,53 @@ header {
   left: 0; 
 }
 
-.sidebar_close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer;
+nav ul {
+	list-style-type: none;
+	padding: 0;
 }
 
-#sidebar a {
-  padding-top: 20%;
-  font-size: 22px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+nav ul li {
+	font-size: 40px;
+	background-color: white;
+	border: 2px solid black;
+	width: 5.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	position: relative;
+	overflow: hidden;
+	margin: 0.3em;
+  margin-bottom: 0.6em;
+	cursor: pointer;
 }
 
-#sidebar a:hover {
-  color: #6d6c6c;
+nav ul li a {
+	color: white;
+	mix-blend-mode: difference;
 }
 
-.sidebar_open {
+nav ul li::before {
+	content: '';
+	position: absolute;
+	width: 1.5em;
+	height: inherit;
+	background-color: black;
+	border-radius: 50%;
+	top: 0;
+	left: -0.75em;
+	transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before {
+	transform: scale(8);
+}
+
+.sidebar nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+#sidebar_open {
   font-size: 30px;
   color: #333;
   background-color: #f1f1f1;
@@ -89,7 +112,8 @@ header {
   align-items: center;
   gap: 10px;
   padding-right: 200px;
-  padding-left: 100px;
+  padding-left: 150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .logo {
