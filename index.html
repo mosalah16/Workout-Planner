@@ -12,10 +12,10 @@
       <div id="sidebar" class="sidebar">
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">List</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="home.html" target="mainframe">Home</a></li>
+            <li><a href="categories.html" target="mainframe">Categories</a></li>
+            <li><a href="list.html" target="mainframe">List</a></li>
+            <li><a href="#" target="mainframe">Feedback</a></li>
           </ul>
         </nav>
     </div>
@@ -33,39 +33,12 @@
           <img src="images/3.jpg" class="slide" alt="Workout Image 3">
       </div>
     </header>
+    <iframe name="mainframe" id="mainframe" src="home.html" width="100%" height="500px"></iframe>
 
-    <div class="parent">
-      <div class="left">
-        <div class="top">
-      <section id="workout-categories">
-        <h2>Choose a Category</h2>
-        <div class="category" onclick="showExercises('strength')">Strength</div>
-        <div class="category" onclick="showExercises('cardio')">Cardio</div>
-        <div class="category" onclick="showExercises('flexibility')">Flexibility</div>
-      </section>
-        </div>
-        <div class="bot">
-          <section id="custom-workout">
-            <h2>Your Custom Workout</h2>
-            <ul id="custom-list"></ul>
-            <button onclick="saveWorkout()">Save Workout</button>
-            <button onclick="clearSavedWorkout()">Clear Saved Workout</button>
-          </section>
-        </div>
-      </div>
     
-      <div class="right">
-      <section id="exercise-list">
-        <h2>Exercises</h2>
-        <div id="exercises"></div>
-        <button onclick="addCustomWorkout()">Add Custom Workout</button>
-      </section>
-      </div>
-    </div>
-    
-      <footer>
-        <p> Workout Planner by Mohamed Salah Allouche</p>
-      </footer>
+    <footer>
+      <p> Workout Planner by Mohamed Salah Allouche</p>
+    </footer>
     
       <script src="js/script.js"></script>
 </body>

@@ -123,27 +123,7 @@ nav ul li:hover::before {
 }
 
 /* middle */
-.parent {
-  display: flex; 
-  width: 100%;
-  min-height: calc(100vh - 80px); 
-}
 
-.left {
-  width: 20%;
-  padding: 10px;
-  border: #CCC solid 1px;
-  min-height: 200px;
-}
-
-.right {
-  display: flex;
-  flex-direction: column; 
-  width: 80%;
-  padding: 10px;
-  border: #CCC solid 1px;
-  min-height: 200px;
-}
 
 .top {
   flex: 1; 

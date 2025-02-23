@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/categories.css">
+    <script src="js/categories.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="left">
+          <div class="top">
+        <section id="workout-categories">
+          <h2>Choose a Category</h2>
+          <div class="category" onclick="showExercises('strength')">Strength</div>
+          <div class="category" onclick="showExercises('cardio')">Cardio</div>
+          <div class="category" onclick="showExercises('flexibility')">Flexibility</div>
+        </section>
+          </div>
+          
+        </div>
+      
+        <div class="right">
+        <section id="exercise-list">
+          <h2>Exercises</h2>
+          <div id="exercises"></div>
+          <button onclick="addCustomWorkout()">Add Custom Workout</button>
+        </section>
+        </div>
+      </div>
+      
+</body>
+</html>
