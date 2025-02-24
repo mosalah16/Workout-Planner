@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/list.css">
-    <script src="js/list.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Planner</title>
+  <link rel="stylesheet" href="css/list.css">
+  <script src="js/exercise_data.js"></script>
+  <script src="js/list.js"></script>
 </head>
 <body>
-    <div class="bot">
-         <section id="custom-workout">
-          <h2>Your Custom Workout</h2>
-          <ul id="custom-list"></ul>
-          <button onclick="saveWorkout()">Save Workout</button>
-          <button onclick="clearSavedWorkout()">Clear Saved Workout</button>
-        </section>
+  <div class="container">
+    <div class="left">
+      <section id="custom-workout">
+        <h2>Your Custom Workout</h2>
+        <ul id="custom-list"></ul>
+        <button onclick="clearSavedWorkout()">Clear Saved Workout</button>
+      </section>
     </div>
+
+    <div class="right">
+      <section id="workout-info">
+        <h2>Workout Info</h2>
+        <p><strong>Time:</strong> <span id="workout-time">00:00:00</span></p>
+        <p><strong>Additional Info:</strong></p>
+        <ul>
+          <li>Total Exercises: <span id="total-exercises">0</span></li>
+          <li>Calories Burned: <span id="calories-burned">0 kcal</span></li>
+        </ul>
+      </section>
+    </div>
+  </div>
 </body>
 </html>

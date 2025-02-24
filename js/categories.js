@@ -1,21 +1,4 @@
-const exercisesData = {
-    strength: [
-      { name: "Push-Up", description: "Great for upper body strength", image: "images/push-up.jpg" },
-      { name: "Squat", description: "Targets the legs and core", image: "images/squat.jpg" }
-    ],
-    cardio: [
-      { name: "Running", description: "Boosts cardiovascular health", image: "images/running.jpg" },
-      { name: "Jump Rope", description: "Great for cardio and coordination", image: "images/jump-rope.jpg" },
-      { name: "High Knee Running", description: "Low abs machine", image: "images/high-knee-running.jpg" },
-      { name: "Burpees", description: "Not for the faint of heart", image: "images/burpees.webp" }
-    ],
-    flexibility: [
-      { name: "Yoga", description: "Increases flexibility and relaxation", image: "images/yoga.jpg" },
-      { name: "Stretching", description: "Improves flexibility and muscle health", image: "images/stretching.jpg" },
-      { name: "Lunges with Twist", description: "Improves muscle and spinal health", image: "images/lunge.jpg" }
-    ]
-  };
-  
+
   let customWorkout = JSON.parse(localStorage.getItem('customWorkout')) || [];
   
   function showExercises(category) {
@@ -71,17 +54,5 @@ const exercisesData = {
       updateCustomWorkout();
     }
   }
+ 
   
-  function saveWorkout() {
-    localStorage.setItem("savedWorkout", JSON.stringify(customWorkout));
-    alert("Workout saved!");
-  }
-  
-  // Load saved workout when the page loads
-  window.onload = function () {
-    const savedWorkout = localStorage.getItem("savedWorkout");
-    if (savedWorkout) {
-      customWorkout = JSON.parse(savedWorkout);
-      updateCustomWorkout();
-    }
-  };

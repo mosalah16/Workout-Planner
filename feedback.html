@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/feedback.css">
+    <script src="js/feedback.js"></script>
+</head>
+<body>
+    <div class="feedback-form">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+
+        <div id="result" class="result" style="display: none;">
+            <h3>Feedback Summary</h3>
+            <p>Your feedback is ready! You can copy it below to send via email to </p><p style="color: red;">m.salah.allouche@gmail.com</p>
+            <div class="feedbackdata"></div>
+            <button onclick="copyFeedback()">Copy to Clipboard</button>
+        </div>
+    </div>
+</body>
+</html>
